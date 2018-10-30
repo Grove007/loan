@@ -1,0 +1,262 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, 
+			  fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+/*h1, h2, h3, h4, h5, h6{ font-size:100%; }*/ 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; }
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{list-style:none;} 
+a { text-decoration:none;color:#666;} 
+a:hover { text-decoration:underline;color:#FF0700;} 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+
+html{
+    font-size:75px;
+}
+body{
+    margin:0 auto;
+    background:#FFEDB8;
+    animation:backbody 12s ease infinite;
+   	-webkit-animation:backbody 12s ease infinite;
+    -moz-animation:backbody 12s ease infinite;
+    -ms-animation:backbody 12s ease infinite;
+    -o-animation:backbody 12s ease infinite;
+}
+#footer{
+    border:1px solid red;
+}
+#top_box,#top_main,#nav,#banner,#main,#foot_box,#footer{
+    /*宽度，水平居中对齐*/
+    width:90%;
+    margin:0 auto;
+    font-size:0.25rem;
+}
+header#top_box{
+    width:100%;
+    height:11.3rem;
+}
+header img{
+	display:flex;
+	width:100%;
+	height:10rem;
+}
+#top_box p{
+	width:100%;
+	height:.67rem;
+	border-bottom:3px solid #2A9EFF;
+	margin:0 auto;
+	position:relative;
+}
+#top_box p input{
+	position:absolute;
+	top:16px;
+	left:16%;
+	width:2.67rem;
+	height:.8rem;
+	color:#fff;
+	font-size:.35rem;
+	border-radius:.4rem;
+	border:none;
+	outline:none;
+	line-height:.4rem;
+	text-align:center;
+	background:#2a9eff;
+}
+#top_main{
+	height:22.27rem;
+	border-bottom:6px solid #4B7897;
+}
+#top_main .form_only{
+	width:100%;
+	height:10.93rem;
+}
+#top_main .form_only p{
+	width:100%;
+	height:.8rem;
+	text-align:center;
+	margin-top:.47rem;
+	border:1px solid #ccc;
+	background:#F0F0F0;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+
+/*表单验证隐藏、错误提示符*/
+#Collective{
+	width:0px;
+	height:0px;
+	text-align:left;
+	display:inline-block;
+}
+#codeSpanId{
+	width:5.93rem;
+	box-sizing:border-box;
+	background:#FFC0CB;
+	text-align:left;
+	color:#FF0000;
+	display:block;
+	position:absolute;
+	left:26%;
+	margin-top:.64rem;
+}
+#top_main .form_only p input{
+	display:flex;
+	width:70%;
+	height:.67rem;
+	border:1px solid #EFBE60;
+	box-sizing:border-box;
+	padding-left:.21rem;
+	/*background:#C6E8FA;*/
+}
+#top_main  p #sect{
+	display:flex;
+	width:41%;
+	height:.69rem;
+	/*background:#fff;*/
+	margin-right:3.16rem;
+	font-size:.3rem;
+	box-sizing:border-box;
+	padding:0 .13rem;
+	border:0;
+	border-left:1px solid #ccc;
+
+}
+#top_main  p #money{
+	display:flex;
+	width:41%;
+	height:.69rem;
+	margin-right:3.16rem;
+	font-size:.3rem;
+	box-sizing:border-box;
+	padding:0 .13rem;
+	border:0;
+	border-left:1px solid #ccc;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+#top_main p option{
+	display:flex;
+	width:100%;
+	height:.8rem;
+	margin:0 auto;
+	color:#666;
+	font-size:.2rem;
+	text-align:center;
+}
+#top_main p option:hover{
+    color:#fff;
+    background-color:#1E90FF;
+} 
+#top_main .form_only button,.flor button{
+	width:100%;
+	height:1rem;
+	font-size:.45rem;
+	text-align:center;
+	letter-spacing:.11rem;
+	background:#1B95E6;
+	color:#fff;
+	border:0;
+	margin-top:.4rem;
+	border-radius:.16rem;
+}
+#top_main .form_only h6{
+	width:100%;
+	height:.8rem;
+	font-size:.2rem;
+	text-align:center;
+	letter-spacing:.067rem;
+	color:#4B7897;
+	margin-top:.13rem;
+}
+
+.flor{
+	width:100%;
+	height:11.27rem;
+	border:1px solid #ccc;
+}
+.flor p{
+	width:100%;
+	height:.8rem;
+	text-align:center;
+	margin-top:.27rem;
+	border:1px solid #999;
+	background:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+#mytabs{
+
+}
+#top_main #youni ul{
+	width:100%;
+	height:.93rem;
+	line-height:.72rem;
+	margin-top:.13rem;
+	box-sizing:border-box;
+	text-align:center;
+	border:0;
+	background:transparent;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+#top_main #youni ul li{
+	background:transparent;
+	border:0;
+}
+#top_main #youni ul a{
+	display:inline-block;
+	width:1.498rem;
+	height:.67rem;
+	border:1px solid #ccc;
+	text-align:center;
+	outline:none;
+	background:#fff;
+	border-radius:.24rem;
+}
+
+.flor .services{
+	height:1.3rem;
+	width:100%;
+}
+
+#top_main .flor i.item{
+	width:60%;
+	height:1.07rem;
+	line-height:.67rem;
+	text-align:left;
+	border-left:1px solid #ccc;
+	font-style:normal;
+	box-sizing:border-box;
+	padding-left:.24rem;
+}
+#top_main i.item b{
+	display:block;
+	height:30px;
+	width:100%;
+	color:#616161;
+}
+#top_main i.item span{
+	display:block;
+	height:.4rem;
+	width:100%;
+	color:#9c9c9c;
+}
+#nav{
+	height:1rem;
+	text-align:center;
+	color:#FFB24F;
+	margin-top:.2rem;
+	box-sizing:border-box;
+	padding-top:.13rem;
+}
+

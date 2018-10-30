@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎来到汉皇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="icon" href="Dr.jpg" type=image/x-icon>
+    <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.css">
+    <link rel="stylesheet" href="css/loan.css">
+    
+    <script src="js/card.js"></script>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+    <style>
+        @keyframes backbody{
+            35%{background:#FFEDB8;}
+            70%{background:#AAAAFF;}
+            100%{background:#FFF;}
+        }
+        -webkit-@keyframes backbody{
+            35%{background:#FFEDB8;}
+            70%{background:#AAAAFF;}
+            100%{background:transparent;}
+        }
+        -moz-@keyframes backbody{
+            35%{background:#FFEDB8;}
+            70%{background:#AAAAFF;}
+            100%{background:#FFF;}
+        }
+         -ms-@keyframes backbody{
+            35%{background:#FFEDB8;}
+            70%{background:#AAAAFF;}
+            100%{background:#FFF;}
+        }
+         -o-@keyframes backbody{
+            35%{background:#FFEDB8;}
+            70%{background:#AAAAFF;}
+            100%{background:#FFF;}
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面顶部 -->
+        <header id="top_box">
+                <!-- 图片 -->
+                <img src="img/banner.png">
+            <p><input type="button" value="在线快速申请"></p>
+        </header>
+        <!-- 表单 -->
+        <div id="top_main">
+            <form class="form_only cmsform" id="commentForm" action="">
+            <p>
+                <span>网上申请</span>
+                <span>客服电话</span>
+                <span>审批放款</span>
+            </p>
+                <p>
+                    <lable for="cusername">真实姓名</lable>
+                    <input type="text" id="cusername" name="username" placeholder="请输入你的真实姓名">
+                    <!-- 隐藏错误提示信息 -->
+        <span id="Collective" style=""> 
+        </span>
+        <!-- 存放错误提示信息 -->
+        <span id="codeSpanId" class="errorMsg" style=""></span>  
+   
+                </p>
+                <p>
+                    <lable for="phone">手机号码</lable>
+                    <input type="text" id="phone" name="phone" placeholder="请输入你的手机号码">
+                     <!-- 隐藏错误提示信息 -->
+        <span id="Collective" style=""> 
+        </span>
+        <!-- 存放错误提示信息 -->
+        <span id="codeSpanId" class="errorMsg" style=""></span> 
+                </p>
+                <p>
+                    <lable for="card">身份证号</lable>
+                    <input type="text" id="card" name="card" placeholder="请输入你的身份证号">
+                     <!-- 隐藏错误提示信息 -->
+        <span id="Collective" style=""> 
+        </span>
+        <!-- 存放错误提示信息 -->
+        <span id="codeSpanId" class="errorMsg" style=""></span> 
+                </p>
+                
+
+                <p>
+                    <lable for="address">详细地址</lable>
+                    <input type="text" id="address" name="address" placeholder="请输入你的详细地址" required>
+                     <!-- 隐藏错误提示信息 -->
+        <span style=""> 
+        </span>
+        <!-- 存放错误提示信息 -->
+        <span id="codeSpanId" class="errorMsg" style=""></span> 
+                </p>
+                <p><span>贷款种类</span>
+                    <select name="loan" id="sect">
+                         <option value="0">个人贷款</option>
+                         <option value="1">企业贷款</option>
+                         <option value="2">房屋贷款</option>
+                         <option value="3">汽车贷款</option>
+                         <option value="4">商户贷款</option>
+                         <option value="5">其他贷款</option>
+                    </select>
+                </p>
+                <p><span>贷款金额</span>
+                     <select name="moneys" id="money">
+                         <option value="5万">5万</option>
+                         <option value="8万">8万</option>
+                         <option value="10万">10万</option>
+                         <option value="12万">12万</option>
+                         <option value="17万">17万</option>
+                         <option value="20万">20万</option>
+                    </select>
+                </p>
+                <button type="submit" id="btn">立即提交</button>
+                <h6>最高可贷20万,急速预审，快速放款</h6>
+            </form>
+
+
+              <div class="flor">
+
+              <div  id="youni">
+            <ul>
+                <li><a href="#tc1">创业贷</a></li>
+                <li><a href="#tc2">消费贷</a></li>
+                <li><a href="#tc3">购房贷</a></li>
+                <li><a href="#tc4">购车贷</a></li>
+            </ul>
+
+            <!-- 切换页面效果 -->
+            <div id="tc1">
+                <p class="services">
+                        <img src="img/qian.png" alt="">
+                        <i class="item">
+                            <b>到账快</b>
+                            <span>最快3个工作日到账</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/jisu.png" alt="">
+                         <i class="item">
+                            <b>灵活还款</b>
+                            <span>可选不同额度与还款方式</span>
+                         </i>
+                </p>
+                <p class="services"><img src="img/shijian.png" alt="">
+                        <i class="item">
+                            <b>额度高</b>
+                            <span>最低可借1万元最高90万元</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/huankuan.png" alt="">
+                        <i class="item">
+                            <b>无资产</b>
+                            <span>不用您抵押任何资产</span>
+                        </i>
+                </p>
+            </div>
+
+             <div id="tc2">
+                <p class="services">
+                        <img src="img/qian.png" alt="">
+                        <i class="item">
+                            <b>最高30万</b>
+                            <span>免抵押免担保，最高可贷30万</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/3.png" alt="">
+                         <i class="item">
+                            <b>足不出户</b>
+                            <span>全程网络贷款</span>
+                         </i>
+                </p>
+                <p class="services"><img src="img/jisu.png" alt="">
+                        <i class="item">
+                            <b>即日放款</b>
+                            <span>手续简便，最快1天放款</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/huankuan.png" alt="">
+                        <i class="item">
+                            <b>期限灵活</b>
+                            <span>贷款期限可选择12、18、30、36个</span>
+                        </i>
+                </p>
+            </div>
+
+             <div id="tc3">
+                <p class="services">
+                        <img src="img/qian.png" alt="">
+                        <i class="item">
+                            <b>到账快</b>
+                            <span>最快3个工作日到账</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/jisu.png" alt="">
+                         <i class="item">
+                            <b>灵活还款</b>
+                            <span>可选不同额度与还款方式</span>
+                         </i>
+                </p>
+                <p class="services"><img src="img/shijian.png" alt="">
+                        <i class="item">
+                            <b>额度高</b>
+                            <span>最低可借1万元最高90万元</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/huankuan.png" alt="">
+                        <i class="item">
+                            <b>无抵押</b>
+                            <span>不用您抵押任何资产</span>
+                        </i>
+                </p>
+            </div>
+
+             <div id="tc4">
+                <p class="services">
+                        <img src="img/qian.png" alt="">
+                        <i class="item">
+                            <b>到账快</b>
+                            <span>最快当日到账</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/jisu.png" alt="">
+                         <i class="item">
+                            <b>灵活还款</b>
+                            <span>可选不同额度不同还款方式</span>
+                         </i>
+                </p>
+                <p class="services"><img src="img/shijian.png" alt="">
+                        <i class="item">
+                            <b>额度高</b>
+                            <span>最高可达评估价90%</span>
+                        </i>
+                </p>
+                <p class="services"><img src="img/huankuan.png" alt="">
+                        <i class="item">
+                            <b>不押车</b>
+                            <span>自由行驶不受阻</span>
+                        </i>
+                </p>
+            </div>
+        </div>
+
+
+
+                <button type="submit" onclick="click_scroll()">立即申请</button>
+                <h6 style='text-align:left;color:#333;font-size:.25rem;margin-top:.27rem;box-sizing:border-box;padding:0 .13rem;'>免责声明：本网站仅提供贷款信息撮合服务，不提供贷款服务，不承担相关法律责任。提醒网民在贷款过程中谨慎效验贷款提供方或中间服务商，在成功贷款前，请勿打款给任何贷款机构或个人</h6>
+            </div>
+
+        </div>
+        <!-- 主导航 -->
+        <nav id="nav">
+            <p>市场有风险 选择需谨慎</p>
+            <p>版权所有：黑河市爱辉区华融小额贷款有限责任公司 </p>
+        </nav>
+        
+        
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="jquery-ui-1.11.4/jquery-ui.js"></script>   
+    <script>
+                $("#youni").tabs();//tab栏切换效果
+
+        //获取交互数据
+        $('#btn').click(function(){
+
+            var parms = {
+                "username":$('#cusername').val(),//用户名
+                "userMobile":$('#phone').val(),//手机号码
+                "personId":$('#card').val(),//身份证
+                "address":$('#address').val(),//地址
+                "loanType":$('#sect').val(),//贷款种类
+                "loanAccount":$('#money').val(),//人币金额
+                "inforPage":'互联网贷款'
+            } 
+            console.log(parms);//打印接收数据
+            $.ajax({
+                type:"POST",
+                url:"http://www.lanhuasj.com.cn/blue-hua/app/thirduser/save",
+                contentType:"application/json",
+                data:JSON.stringify(parms),
+                success:function(data){
+                    console.log(data);
+                    console.log("数据接收成功");
+                },error:function(data){
+                    console.log(data);
+                    console.log("数据调取错误，你再检查一下");
+                }
+            });
+        });
+       
+       //点击弹跳指定区域高度
+         function click_scroll() {
+        var scroll_offset = $(".form_only").offset(); //得到pos这个div层的offset，包含两个值，top和left
+         $("body,html").animate({
+         scrollTop:scroll_offset.top //让body的scrollTop等于pos的top，就实现了滚动
+            },0);
+        }
+    </script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/loan.js"></script>
+    <script>
+    
+//附单独js验证方法
+    /*function isMobileMethod(email){
+        var regPhone = /^(13[0-9]|15[012356789]|18[0123456789]|147|145|17[0-9])\d{8}$/;
+        if(regPhone.test(email)){
+            return true;
+        }else{
+            return false;
+        }   
+    }*/
+
+    </script>
+</body>
+</html>
